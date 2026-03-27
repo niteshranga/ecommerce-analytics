@@ -45,17 +45,4 @@ cleaned as (
 )
 
 select * from cleaned
-```
 
----
-
-**Key things to notice for interview:**
-- `INITCAP` — standardizes city name casing from raw data
-- `UPPER` — normalizes state codes
-- Region mapping — business logic applied in staging, not raw
-
----
-
-Path to use in GitHub:
-```
-models/staging/stg_customers.sql
