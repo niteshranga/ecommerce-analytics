@@ -18,6 +18,9 @@ models:
     staging:
       +materialized: view
       +schema: STG
+    intermediate:
+      +materialized: table
+      +schema: INT
     dimensions:
       +materialized: table
       +schema: DIMS
