@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: raw
+    database: ECOMMERCE
+    schema: RAW
+    tables:
+      - name: orders
+      - name: customers
+      - name: order_items
+      - name: products
+      - name: sellers
+      - name: order_payments
+      - name: order_reviews
+      - name: product_category_translation
