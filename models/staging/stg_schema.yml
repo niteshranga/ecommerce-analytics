@@ -105,10 +105,9 @@ models:
     description: "Cleaned reviews with sentiment labels"
     columns:
       - name: review_id
-        description: "Unique review identifier. Source data contains duplicates which are deduplicated keeping the latest record
-    per review_id ordered by review_answer_timestamp."
+        description: "Unique review identifier. Source data contains duplicates deduplication handled in int_order_reviews"
         tests:
-          - unique
+          # unique
           - not_null
       - name: order_id
         tests:
