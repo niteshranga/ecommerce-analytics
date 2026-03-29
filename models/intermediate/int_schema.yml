@@ -2,11 +2,12 @@ version: 2
 
 models:
   - name: int_order_reviews
-    description: "Deduplicated order reviews — keeps most recent review per order"
+    description: "Deduplicated order reviews — one row per review_id"
     columns:
       - name: review_id
         description: "Unique review identifier after deduplication"
         tests:
+          - unique
           - not_null
       - name: order_id
         tests:

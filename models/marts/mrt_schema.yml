@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: mart_sales_summary
+    description: >
+      Final analytics-ready table combining orders, customers,
+      dates and order items. One row per order.
+      Excludes orders with no payment value as these are 
+      considered unfulfilled orders.
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: order_date
+        tests:
+          - not_null
+      - name: customer_region
+        tests:
+          - not_null
+      - name: total_payment_value
+        tests:
+          - not_null
