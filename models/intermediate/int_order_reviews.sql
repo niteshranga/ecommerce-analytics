@@ -12,7 +12,7 @@ with source as (
 deduped as (
     select *,
         row_number() over (
-            partition by review_id
+            partition by order_id  
             order by review_answer_timestamp desc nulls last
         ) as rn
     from source
@@ -20,7 +20,6 @@ deduped as (
 
 final as (
     select
-        review_id,
         order_id,
         review_score,
         review_score_label,
