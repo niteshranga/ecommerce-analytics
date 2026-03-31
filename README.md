@@ -257,6 +257,19 @@ great_expectations checkpoint run raw_orders_checkpoint
 | Version Control | GitHub | CI/CD |
 | Orchestration | dbt Cloud Scheduler | Pipeline runs |
 
+## 🔮 Future Enhancements
+
+### 1. Apache Iceberg Integration
+The marts layer is designed for migration to Snowflake-managed 
+Iceberg tables providing:
+- **Open table format** — portable across Spark, Trino, AWS Athena
+- **Time travel** — point-in-time snapshots for audit trails
+- **Schema evolution** — add columns without breaking consumers
+- **Reduced vendor lock-in** — data accessible outside Snowflake
+
+Implementation would update `mart_sales_summary` config:
+```sql
+
 ---
 
 ## 📈 Key Design Decisions
