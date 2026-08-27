@@ -6,7 +6,10 @@ A production-grade analytics engineering project built on the **Brazilian E-Comm
 **Stack:** Snowflake · dbt Cloud · Great Expectations · Kimball Star Schema  
 **Status:** 🚧 In Progress
 
----
+<p align="left">
+  <img src="https://raw.githubusercontent.com/niteshranga/nr-analytics/main/img/e-commerce.jpg" alt="E-Commerce Analytics Engineering Project — dbt and Snowflake data engineering project" width="70%" height="500">
+</p>
+
 
 ## 🎯 Project Goals
 
